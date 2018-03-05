@@ -25,7 +25,7 @@ namespace Chat
             txtOneIP.Text = GetLocalIP();
             txtTwoIP.Text = GetLocalIP();
 
-            btnSend.Enabled = false;
+            //btnSend.Enabled = false;
         }
 
         private string GetLocalIP()
@@ -69,16 +69,23 @@ namespace Chat
             }
         }
 
+
         private void btnSend_Click(object sender, EventArgs e)
         {
             try
             {
                 System.Text.ASCIIEncoding enc = new System.Text.ASCIIEncoding();
                 byte[] msg = new byte[1500];
-            }
-            catch
-            {
+                msg = enc.GetBytes(txtType.Text);
 
+                suck.Send(msg);
+
+                listConvo.Items.Add("You: " + txtType.Text);
+                txtType.Clear();
+            }
+            catch(Exception x)
+            {
+                MessageBox.Show(x.ToString());
             }
         }
 
@@ -86,10 +93,10 @@ namespace Chat
         {
             try
             {
-                eLocal = new IPEndPoint(IPAddress.Parse(txtOneIP.Text), Convert.ToInt32(txtOnePort));
+                eLocal = new IPEndPoint(IPAddress.Parse(txtOneIP.Text), Convert.ToInt32(txtOnePort.Text));
                 suck.Connect(eLocal);
 
-                eRemote = new IPEndPoint(IPAddress.Parse(txtTwoIP.Text), Convert.ToInt32(txtTwoPort));
+                eRemote = new IPEndPoint(IPAddress.Parse(txtTwoIP.Text), Convert.ToInt32(txtTwoPort.Text));
                 suck.Connect(eRemote);
 
                 byte[] buffer = new byte[1500];
