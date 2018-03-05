@@ -72,6 +72,11 @@ namespace Chat
 
         private void btnSend_Click(object sender, EventArgs e)
         {
+            sendMessage();
+        }
+
+        private void sendMessage()
+        {
             try
             {
                 System.Text.ASCIIEncoding enc = new System.Text.ASCIIEncoding();
@@ -83,9 +88,17 @@ namespace Chat
                 listConvo.Items.Add("You: " + txtType.Text);
                 txtType.Clear();
             }
-            catch(Exception x)
+            catch (Exception x)
             {
                 MessageBox.Show(x.ToString());
+            }
+        }
+
+        private void txtType_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                sendMessage();
             }
         }
 
@@ -94,7 +107,7 @@ namespace Chat
             try
             {
                 eLocal = new IPEndPoint(IPAddress.Parse(txtOneIP.Text), Convert.ToInt32(txtOnePort.Text));
-                suck.Connect(eLocal);
+                suck.Bind(eLocal);
 
                 eRemote = new IPEndPoint(IPAddress.Parse(txtTwoIP.Text), Convert.ToInt32(txtTwoPort.Text));
                 suck.Connect(eRemote);

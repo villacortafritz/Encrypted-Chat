@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtOneIP = new System.Windows.Forms.RichTextBox();
             this.txtOnePort = new System.Windows.Forms.RichTextBox();
+            this.txtOneIP = new System.Windows.Forms.RichTextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txtTwoPort = new System.Windows.Forms.RichTextBox();
             this.txtTwoIP = new System.Windows.Forms.RichTextBox();
@@ -60,14 +60,21 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Your Address:";
             // 
-            // label1
+            // txtOnePort
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(113, 18);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Server Address:";
+            this.txtOnePort.Location = new System.Drawing.Point(12, 130);
+            this.txtOnePort.Name = "txtOnePort";
+            this.txtOnePort.Size = new System.Drawing.Size(175, 35);
+            this.txtOnePort.TabIndex = 3;
+            this.txtOnePort.Text = "";
+            // 
+            // txtOneIP
+            // 
+            this.txtOneIP.Location = new System.Drawing.Point(12, 55);
+            this.txtOneIP.Name = "txtOneIP";
+            this.txtOneIP.Size = new System.Drawing.Size(175, 35);
+            this.txtOneIP.TabIndex = 2;
+            this.txtOneIP.Text = "";
             // 
             // label2
             // 
@@ -78,21 +85,14 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Unique Port:";
             // 
-            // txtOneIP
+            // label1
             // 
-            this.txtOneIP.Location = new System.Drawing.Point(12, 55);
-            this.txtOneIP.Name = "txtOneIP";
-            this.txtOneIP.Size = new System.Drawing.Size(175, 35);
-            this.txtOneIP.TabIndex = 2;
-            this.txtOneIP.Text = "";
-            // 
-            // txtOnePort
-            // 
-            this.txtOnePort.Location = new System.Drawing.Point(12, 130);
-            this.txtOnePort.Name = "txtOnePort";
-            this.txtOnePort.Size = new System.Drawing.Size(175, 35);
-            this.txtOnePort.TabIndex = 3;
-            this.txtOnePort.Text = "";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(113, 18);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Server Address:";
             // 
             // groupBox2
             // 
@@ -161,6 +161,7 @@
             this.txtType.Size = new System.Drawing.Size(340, 36);
             this.txtType.TabIndex = 7;
             this.txtType.Text = "";
+            this.txtType.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtType_KeyDown);
             // 
             // btnSend
             // 
