@@ -1,0 +1,10 @@
+C:\Users\Fritz Villacorta\Desktop\encrypt\Chat\Chat\bin\Debug\Chat.exe.config
+C:\Users\Fritz Villacorta\Desktop\encrypt\Chat\Chat\bin\Debug\Chat.exe
+C:\Users\Fritz Villacorta\Desktop\encrypt\Chat\Chat\bin\Debug\Chat.pdb
+C:\Users\Fritz Villacorta\Desktop\encrypt\Chat\Chat\obj\Debug\Chat.csprojResolveAssemblyReference.cache
+C:\Users\Fritz Villacorta\Desktop\encrypt\Chat\Chat\obj\Debug\Chat.Form1.resources
+C:\Users\Fritz Villacorta\Desktop\encrypt\Chat\Chat\obj\Debug\Chat.Properties.Resources.resources
+C:\Users\Fritz Villacorta\Desktop\encrypt\Chat\Chat\obj\Debug\Chat.csproj.GenerateResource.Cache
+C:\Users\Fritz Villacorta\Desktop\encrypt\Chat\Chat\obj\Debug\Chat.csproj.CoreCompileInputs.cache
+C:\Users\Fritz Villacorta\Desktop\encrypt\Chat\Chat\obj\Debug\Chat.exe
+C:\Users\Fritz Villacorta\Desktop\encrypt\Chat\Chat\obj\Debug\Chat.pdb
