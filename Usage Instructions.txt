@@ -1,0 +1,27 @@
+EncryptoChat version 1.2
+_______________________________________________________
+
+EncryptoChat uses the following features:
+
+	-SHA215 Hash Algorithm for User Authentication
+	-Ceasar Cipher for Message Encryption
+	-Sockets for connectivity
+_______________________________________________________
+
+Step 1: Instantiate two EncryptoChat Applications by
+	clicking twice the exe file.
+
+Step 2: The Agreed Key (which is the IP Address) is
+	auto-generated.
+
+Step 3: Input any integers in the "Unique Port" area.
+	This integer serves as the unique indentity of
+	that specific instance of the application
+
+Step 4: Click "Start" for all instances.
+
+Step 5: Type your message and hit "Send" or simply
+	press enter to send your message to recipient.
+
+Enjoy!
+_______________________________________________________
